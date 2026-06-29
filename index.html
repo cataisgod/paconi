@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paconi — Construction et rénovation premium. Nous construisons avec passion et précision pour des projets résidentiels et commerciaux d'exception.">
+  <meta name="keywords" content="construction, rénovation, Paconi, finitions premium, menuiserie, plomberie, électricité">
+  <title>PACONI — Construction Premium</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================
+       EN-TÊTE
+  ========================================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="#accueil" class="logo">PACONI</a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#accueil"     class="nav__link">Accueil</a></li>
+          <li><a href="#apropos"     class="nav__link">À propos</a></li>
+          <li><a href="#services"    class="nav__link">Services</a></li>
+          <li><a href="#realisations" class="nav__link">Réalisations</a></li>
+          <li><a href="#contact"     class="nav__link nav__link--cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+    <section class="hero" id="accueil">
+      <div class="hero__bg" style="background-image: url('assets/images/FOndRenov.webp');"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow" data-aos="fade-up" data-aos-delay="100">Construction &amp; Rénovation</p>
+        <img
+          src="assets/images/pro%20azur%20logo.svg"
+          alt="Paconi"
+          class="hero__logo"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="320">
+          Nous transformons vos visions en réalité — des projets résidentiels et commerciaux
+          réalisés selon les plus hauts standards du métier.
+        </p>
+        <a href="#contact" class="btn btn--primary" data-aos="fade-up" data-aos-delay="440">
+          Demander une consultation
+        </a>
+      </div>
+
+      <a href="#apropos" class="hero__scroll" aria-label="Défiler vers le bas">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ========================================
+         À PROPOS
+    ========================================= -->
+    <section class="about" id="apropos">
+      <div class="container about__inner">
+
+        <div class="about__text" data-aos="fade-right" data-aos-duration="800">
+          <span class="section-eyebrow">Qui sommes-nous</span>
+          <h2 class="section-title">La passion<br>du détail</h2>
+
+          <div class="about__block">
+            <h3 class="about__block-title">Tous les corps de métier représentés</h3>
+            <p>
+              Paconi coordonne aujourd'hui l'ensemble des métiers nécessaires à la réalisation
+              de vos projets, afin d'apporter une solution complète, sur-mesure et respectant
+              les budgets fixés.
+            </p>
+          </div>
+
+          <div class="about__block">
+            <h3 class="about__block-title">Un niveau d'exigence élevé</h3>
+            <p>
+              Savoir-faire et passion animent jour après jour nos équipes, pour obtenir le
+              meilleur résultat technique et décoratif, en proposant les derniers matériaux
+              et technologies dans le respect des normes techniques en vigueur.
+            </p>
+          </div>
+        </div>
+
+        <div class="about__image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <img
+            src="assets/images/A05A8733-3.webp"
+            alt="Projet Paconi — intérieur premium"
+            loading="lazy"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================
+         SERVICES
+    ========================================= -->
+    <section class="services" id="services">
+      <div class="services__bg" style="background-image: url('assets/images/PICINERP.webp');"></div>
+      <div class="services__overlay"></div>
+
+      <div class="container services__content">
+        <span class="section-eyebrow section-eyebrow--light" data-aos="fade-up">Ce que nous offrons</span>
+        <h2 class="section-title section-title--light" data-aos="fade-up" data-aos-delay="80">
+          Nos services
+        </h2>
+
+        <ul class="services__list" role="list">
+          <li class="services__item" data-aos="fade-up" data-aos-delay="140">
+            Murs, Charpente, Toiture
+          </li>
+          <li class="services__item" data-aos="fade-up" data-aos-delay="200">
+            Menuiseries &amp; Cloisons
+          </li>
+          <li class="services__item" data-aos="fade-up" data-aos-delay="260">
+            Plomberie, Électricité
+          </li>
+          <li class="services__item" data-aos="fade-up" data-aos-delay="320">
+            Plâtre &amp; Finitions
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================================
+         RÉALISATIONS
+    ========================================= -->
+    <section class="portfolio" id="realisations">
+      <div class="container">
+
+        <span class="section-eyebrow text-center" data-aos="fade-up">Portfolio</span>
+        <h2 class="section-title text-center" data-aos="fade-up" data-aos-delay="80">
+          Nos réalisations
+        </h2>
+
+        <div class="portfolio__grid">
+
+          <article class="portfolio__item" data-aos="fade-up" data-aos-delay="80">
+            <img src="assets/images/20160118-A05A9163.webp" alt="Rénovation résidentielle" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__label">Rénovation résidentielle</p>
+            </div>
+          </article>
+
+          <article class="portfolio__item" data-aos="fade-up" data-aos-delay="130">
+            <img src="assets/images/20160125-A05A0708.webp" alt="Aménagement intérieur" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__label">Aménagement intérieur</p>
+            </div>
+          </article>
+
+          <article class="portfolio__item" data-aos="fade-up" data-aos-delay="180">
+            <img src="assets/images/A05A2109.webp" alt="Construction neuve" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__label">Construction neuve</p>
+            </div>
+          </article>
+
+          <article class="portfolio__item" data-aos="fade-up" data-aos-delay="230">
+            <img src="assets/images/IMG_9029.webp" alt="Finitions premium" loading="lazy">
+            <div class="portfolio__overlay">
+              <p class="portfolio__label">Finitions premium</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT
+    ========================================= -->
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <span class="section-eyebrow text-center" data-aos="fade-up">Contactez-nous</span>
+        <h2 class="section-title text-center" data-aos="fade-up" data-aos-delay="80">
+          Étudions ensemble<br>votre projet
+        </h2>
+
+        <div class="contact__inner">
+
+          <!-- Informations de contact + carte -->
+          <div class="contact__info" data-aos="fade-right">
+
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">
+                <!-- Icône téléphone -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1
+                    4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72
+                    c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.58a16 16 0 0 0 6.29
+                    6.29l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <div>
+                <p class="contact__label">Téléphone</p>
+                <a href="tel:+33621470371" class="contact__value contact__value--large">
+                  +33 6 21 47 03 71
+                </a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">
+                <!-- Icône email -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </span>
+              <div>
+                <p class="contact__label">Email</p>
+                <a href="mailto:info@paconi.fr" class="contact__value">
+                  info@paconi.fr
+                </a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">
+                <!-- Icône site web -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </span>
+              <div>
+                <p class="contact__label">Site web</p>
+                <a href="https://www.paconi.fr" target="_blank" rel="noopener" class="contact__value">
+                  www.paconi.fr
+                </a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">
+                <!-- Icône localisation -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <div>
+                <p class="contact__label">Adresse</p>
+                <p class="contact__value">2785 Route de Loqui<br>13290 Aix-en-Provence</p>
+              </div>
+            </div>
+
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps?q=2785+Route+de+Loqui,+13290+Aix-en-Provence,+France&output=embed"
+                width="100%"
+                height="220"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation de Paconi sur la carte">
+              </iframe>
+            </div>
+
+          </div>
+
+          <!-- Formulaire de contact -->
+          <div class="contact__form-wrap" data-aos="fade-left">
+            <form class="contact__form" id="contactForm" novalidate>
+
+              <div class="form__group">
+                <label for="name" class="form__label">Nom</label>
+                <input
+                  type="text" id="name" name="name"
+                  class="form__input" placeholder="Votre nom"
+                  required autocomplete="name">
+                <span class="form__error" id="nameError" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input
+                  type="email" id="email" name="email"
+                  class="form__input" placeholder="email@exemple.com"
+                  required autocomplete="email">
+                <span class="form__error" id="emailError" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label for="phone" class="form__label">
+                  Téléphone <span class="form__optional">(optionnel)</span>
+                </label>
+                <input
+                  type="tel" id="phone" name="phone"
+                  class="form__input" placeholder="+33 (0)6 00 00 00 00"
+                  autocomplete="tel">
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label">Quelques mots sur votre projet</label>
+                <textarea
+                  id="message" name="message"
+                  class="form__input form__textarea"
+                  placeholder="Décrivez brièvement votre projet…"
+                  required></textarea>
+                <span class="form__error" id="messageError" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                Envoyer
+              </button>
+
+              <div class="form__success" id="formSuccess" role="status" aria-live="polite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                Message envoyé ! Nous vous recontacterons très prochainement.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       PIED DE PAGE
+  ========================================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#accueil" class="logo logo--footer">PACONI</a>
+        <p class="footer__tagline">Construire avec passion et précision.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Liens rapides">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <!-- REMPLACER : liens réels vers les réseaux sociaux -->
+        <a href="#" aria-label="Facebook" class="footer__social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="footer__social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="footer__social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> PACONI. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
