@@ -172,25 +172,42 @@ if (form) {
     if (el) el.addEventListener('blur', validate);
   });
 
-  /* --- submit handler --- */
+  /* --- submit handler — trimite la api/submit.php --- */
   form.addEventListener('submit', e => {
     e.preventDefault();
     if (!validate()) return;
 
-    /* Simulate a network request — replace with fetch() to a real endpoint */
+    const name    = document.getElementById('name').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const phone   = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
     submitBtn.textContent = 'Envoi en cours…';
     submitBtn.disabled    = true;
 
-    setTimeout(() => {
-      form.reset();
-
-      successMsg.classList.add('is-visible');
-      submitBtn.textContent = 'Envoyer';
-      submitBtn.disabled    = false;
-
-      /* Hide success message after 7 s */
-      setTimeout(() => successMsg.classList.remove('is-visible'), 7000);
-    }, 1200);
+    fetch('api/submit.php', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ name, email, phone, message }),
+    })
+      .then(r => r.json())
+      .then(data => {
+        if (data.success) {
+          form.reset();
+          successMsg.classList.add('is-visible');
+          setTimeout(() => successMsg.classList.remove('is-visible'), 7000);
+        } else {
+          const msgs = data.errors ? data.errors.join('\n') : (data.message || 'Une erreur est survenue.');
+          alert(msgs);
+        }
+      })
+      .catch(() => {
+        alert('Erreur de connexion. Veuillez réessayer.');
+      })
+      .finally(() => {
+        submitBtn.textContent = 'Envoyer';
+        submitBtn.disabled    = false;
+      });
   });
 
 }
