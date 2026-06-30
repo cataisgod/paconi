@@ -138,6 +138,7 @@ button { font-family: inherit; }
 }
 
 /* Logo */
+/* Logo */
 .logo {
   font-family: var(--f-display);
   font-size: 1.45rem;
@@ -289,12 +290,18 @@ button { font-family: inherit; }
   margin-bottom: 26px;
 }
 
+@keyframes heroLogoReveal {
+  from { clip-path: inset(0 50%); opacity: 0; }
+  to   { clip-path: inset(0 0%);  opacity: 1; }
+}
+
 .hero__logo {
   display: block;
   margin: 0 auto 36px;
   width: clamp(200px, 38vw, 420px);
   height: auto;
   filter: brightness(0) invert(1);
+  animation: heroLogoReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
 }
 
 .hero__subtitle {
